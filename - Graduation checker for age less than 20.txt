@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(" Enter your name : ");
+        String name = scanner.nextLine();
+        System.out.println(" Hi " + name + '!');
+
+        System.out.println( " What's your age now " + name + '?');
+        int age = scanner.nextInt();
+        System.out.println("Okay, so you are " + age + " year's old ! Yayy !!");
+
+
+        if(age<20) {
+
+            System.out.println("So, have you completed your graduation bruv ? True/False ");
+            boolean havePassed = scanner.nextBoolean();
+
+            if (havePassed) {
+                System.out.println("You cheeky bastard, Nope, you are not a graduate yet, " + name + " ,Good luck though !!");
+            } else {
+                System.out.println( "Okay, so you are not a graduate !!");
+            }
+        }
+        else{
+                System.out.println("Ofcourse, you are a graduate, " + name + '!' );
+            }
+        scanner.close();
+    }
+
+
+}
